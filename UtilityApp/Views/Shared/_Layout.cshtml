@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>@ViewData["Title"] - UtilityApp</title>
+</head>
+<body>
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="logo-div">
+                <span class="material-symbols-outlined logo">token</span>
+                <h2 class="brand-name menu-name">TOKEN</h2>
+            </div>
+            <div class="sidebar-links">
+                <a asp-action="Index" asp-controller="Home" class="link menu toggle">
+                    <span class="material-symbols-outlined">dashboard</span>
+                    <span class="menu-name">Overview</span>
+                </a>
+
+                <a asp-action="Index" asp-controller="Accounting" class="link menu toggle">
+                    <span class="material-symbols-outlined">bar_chart_4_bars</span>
+                    <span class="menu-name">Accounting</span>
+                </a>
+
+                <a href="#" class="link menu toggle">
+                    <span class="material-symbols-outlined"> calendar_month</span>
+                    <span class="menu-name">Calendar</span>
+                </a>
+
+                <a href="#" class="link menu toggle">
+                    <span class="material-symbols-outlined">done_all</span>
+                    <span class="menu-name">Todo</span>
+                </a>
+
+                <a href="#" class="link menu toggle">
+                    <span class="material-symbols-outlined">dataset</span>
+                    <span class="menu-name">Students</span>
+                </a>
+            </div>
+            <a href="#" class="menu toggle settings">
+                <span class="material-symbols-outlined">settings</span>
+                <span class="menu-name">Settings</span>
+            </a>
+        </div>
+        <div class="dashboard">
+            <div class="header" style="margin-bottom: 2rem;">
+                <span class="material-symbols-outlined hambuger">menu</span>
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
+            </div>
+            @RenderBody()
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*     <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div> *@
+
+@*     <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - UtilityApp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+@*     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> *@
+    <script src="~/js/dashboard.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
