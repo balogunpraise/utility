@@ -74,13 +74,16 @@ body {
     gap: 1rem;
     padding: 10px;
     border-radius: 5px;
+}
+
+.link2 {
     transition: all .1s;
     cursor: pointer;
 }
 
-    .link:hover {
-        background: var(--main-hover-color);
-    }
+.link2:hover {
+    background: var(--main-hover-color);
+}
 
 .link-active {
     background: var(--main-hover-color);

@@ -3,7 +3,7 @@
 const sidebar = document.querySelector('.sidebar')
 const hambuger = document.querySelector('.hambuger')
 const toggleItems = document.querySelectorAll('.toggle')
-const sidebarLinks = document.querySelectorAll('.link')
+const sidebarLinks = document.querySelectorAll('.link2')
 const menuNames = document.querySelectorAll('.menu-name')
 hambuger.addEventListener('click', function () {
     if (sidebar.classList.contains('sidebar-opened')) {
