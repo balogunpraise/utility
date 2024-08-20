@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/dashboard.css">
+    <link rel="stylesheet" href="~/css/todo.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>@ViewData["Title"] - UtilityApp</title>
 </head>
@@ -34,7 +35,7 @@
                     <span class="menu-name">Calendar</span>
                 </a>
 
-                <a href="#" class="link link2 menu toggle">
+                <a asp-action="Index" asp-controller="Todo" class="link link2 menu toggle">
                     <span class="material-symbols-outlined">done_all</span>
                     <span class="menu-name">Todo</span>
                 </a>

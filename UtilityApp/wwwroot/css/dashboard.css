@@ -108,9 +108,10 @@ body {
 .dashboard {
     width: 100%;
     padding: 1rem;
-    overflow-x: auto;
+    overflow-x: hidden;
+/*    overflow-x: auto;
     overflow-x: scroll;
-    overflow-y: scroll;
+    overflow-y: scroll;*/
 }
 
 .hambuger {
